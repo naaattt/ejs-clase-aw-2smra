@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio formularios (clase)</title>
+</head>
+
+<body>
+    <form action="procesarformulario.php" method="get">
+        <fieldset>
+            <legend>Informaci&oacute;n biol&oacute;gica</legend>
+            <p> Nombre: <input type="text" name="nombre" size="30"> </p>
+            <p> Apellidos: <input type="text" name="apellido" size="40"> </p>
+            <p> Email: <input type="email" name="mail" size="30" required="" placeholder="usuario@dominio"> </p>
+            <p> Año de nacimiento: <input type="number" name="nacido" min="1900" max="2022"></p>
+            <p> Provincia de nacimiento:
+                <select name="lugarnacimiento" id="lugarnacimiento">
+                    <option value=""> - </option>
+                    <optgroup label="Andaluc&iacute;a">
+                        <option value=""> Sevilla </option>
+                    </optgroup>
+                    <optgroup label="Catalunya">
+                        <option value=""> Girona </option>
+                        <option value=""> Barcelona </option>
+                    </optgroup>
+                    <optgroup label="C. Madrid">
+                        <option value=""> Madrid </option>
+                    </optgroup>
+                </select>
+            </p>
+            <p> Foto del DNI: <input type="file" name="dni"> </p>
+            <p> Sexo:
+                <input type="radio" name="hm" value="h"> Hombre
+                <input type="radio" name="hm" value="m"> Mujer
+                <input type="radio" name="hm" value="nb"> No binario
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend> Personalidad </legend>
+            <p> Director de cine: <br>
+                <input type="checkbox" name="casilla"> Quentin Tarantino <br>
+                <input type="checkbox" name="davfinc"> David Fincher <br>
+                <input type="checkbox" name="stanqu"> Stanley Kubrick <br>
+            </p>
+            <p>Lugares visitados:
+                <select name="lugaresvisitados[]" id="lugaresvisitados" multiple>
+                    <option value="blanco"> - </option>
+                    <option value="port"> Portugal </option>
+                    <option value="franc"> Francia </option>
+                    <option value="ital"> Italia </option>
+                </select>
+            </p>
+            <p>
+                Pasatiempos o actividades que disfrutas: <br>
+                <textarea name="desc" rows="4" cols="20"
+                    placeholder="ver peliculas, jugar baloncesto, escuchar m&uacute;sica, etc."></textarea>
+
+            </p>
+        </fieldset>
+        <button>
+            <img src="img/cora.jpeg" alt="corazon" width="15" height="15">
+        </button>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+
+
+    </form>
+
+</body>
+
+</html>
