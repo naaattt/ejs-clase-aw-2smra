@@ -1,0 +1,20 @@
+p{
+    color:blueviolet
+}
+
+.parrafosimpares{
+    color:darkblue;
+}
+
+#parrafo2{
+    color:aqua
+}
+
+p em{
+    background-color: yellow;
+}
+
+p.cursiva{
+    font-style: oblique;
+    font-size: large;
+}
