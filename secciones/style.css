@@ -1,0 +1,20 @@
+header{
+    border: 3px purple solid;
+    height: 20%;
+}
+
+nav{
+    border: 3px pink solid;
+    height: 60%;
+}
+
+footer{
+    border: 3px greenyellow solid;
+    height: 20%;
+}
+
+li.menu{
+    list-style-type: none;
+    display: inline;
+    margin: 30px;
+}
