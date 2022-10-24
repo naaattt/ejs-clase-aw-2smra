@@ -16,5 +16,19 @@ footer{
 li.menu{
     list-style-type: none;
     display: inline;
-    margin: 30px;
+    margin: 10px;
+    border: 2px solid pink;
+}
+
+div.menu {;
+    width: 80%;
+    position:absolute;
+    left: 20%;
+    top: 3%;
+}
+
+div.logo  {
+    width: 20%;
+    position:absolute;
+    top:3%
 }
