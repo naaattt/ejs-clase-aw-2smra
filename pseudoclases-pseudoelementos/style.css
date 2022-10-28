@@ -1,0 +1,22 @@
+/*Autora: Nat:)*/
+
+header p:first-child{
+    color:blueviolet;
+}
+
+a:link{
+    color:blanchedalmond;
+    background-color: pink;
+}
+
+a:visited{
+    color:black;
+    background-color: blueviolet;
+}
+
+a:hover{
+    background-color: aquamarine;
+    color: blue;
+    font-size: larger;
+    font-weight: bold;
+}
